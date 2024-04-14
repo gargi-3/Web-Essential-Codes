@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility</title>
+</head>
+<body>
+    <h1><u>Casting Vote</u></h1>
+    <script>
+
+        function checkEligibility(){
+            let age = parseInt(prompt("Enter the age:"));
+            let nationality = prompt("Enter your nationality");
+
+            if(age>=18 && nationality.toLowerCase()=="indian"){
+                document.write("Eligible to cast vote.")
+            }
+            else{
+                document.write("Not eligible to cast vote.")
+            }
+        }
+        checkEligibility();
+
+    </script>
+</body>
+</html>

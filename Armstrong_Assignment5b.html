@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+<body>
+    <h1><u>Check whether Armstrong no. or not</u></h1>
+
+    <script>
+        /*An Armstrong number is a number that is equal to the sum of its own digits 
+        raised to the power of the number of digits.*/
+
+        let num = prompt("Enter the number:");
+        let temp = num;
+        let no_digits = num.toString().length;
+
+        let sum = 0;
+        while(temp>0){
+            //console.log(temp);
+            let digit = temp%10;
+            //console.log(digit);
+            //console.log(digit**no_digits);
+            sum += digit**no_digits;
+            //console.log("Sum "+sum);
+            temp = parseInt(temp/10);
+            //console.log(temp);
+            //console.log('------');
+        }
+
+        if(sum == num){
+            document.write(num + " is an Armstrong number.")
+        }
+        else{
+            document.write(num + " is not an Armstrong number.")
+        }
+
+    </script>
+</body>
+</html>

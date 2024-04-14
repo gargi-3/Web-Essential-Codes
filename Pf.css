@@ -1,0 +1,130 @@
+/* Pf.css */
+
+body{
+    background: rgb(224,54,198);
+    background: radial-gradient(circle, rgba(224,54,198,1) 0%, rgba(253,177,45,1) 100%);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+nav{
+    font-family: "Jost", sans-serif;
+    display: flex; /*separates two boxes*/
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /*for responsive content to display on mobile full-width*/
+}
+
+nav h1{
+    font-size: 30px;
+    padding: 0 15px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.35s ease-in-out; /*trans=name,duration,effect*/
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 25px;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    transition: all 0.5s ease-in-out;
+    color: greenyellow;
+}
+
+section {
+    padding: 50px;
+}
+
+#about{
+    text-align: justify;
+    margin: 50px;
+}
+
+.aboutme{
+    display: flex;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.aboutme img{
+    width: 300px;
+    height: 200px;
+    padding: 0px 30px;
+}
+
+#projects{
+    text-align: justify;
+    margin: 50px;
+}
+
+#contact{
+    margin: 60px auto;
+    padding: 30px;
+    width: 500px;
+}
+
+input[type="text"],input[type="email"],textarea,input[type="submit"]{
+    font-family: monospace, serif;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    background-color: rgb(127, 179, 49);
+    color: white;
+    padding: 12px 45px;
+    margin: 9px 0;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(135, 215, 15);
+    transition: all 0.25s ease-in-out;
+}
+
+footer{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+footer .media-icons{
+    display: flex;
+    gap: 2rem;
+}
+
+footer .media-icons a{
+    color: black;
+    font-size: large;
+}
+
+footer .media-icons a .fa-linkedin:hover{
+    color: rgb(43, 105, 221);
+    transition: all 0.5s ease-in-out;
+}
+
+footer .media-icons a .fa-github:hover{
+    color: #333333cc;
+    transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            margin-top: 10px;
+        }
+        #rform{
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        label{
+            display: block;
+            padding: 10px 200px 10px 10px;
+        }
+        input[type="text"],input[type="date"],input[type="email"],input[type="number"],textarea,input[type="submit"]{
+            margin: 10px 300px 10px 10px;
+        }
+        #gender{
+            margin: 10px 300px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <table border="1px">
+            <tr>
+                <th colspan="4" id="rform">Registration Form</th>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="name">Student Name</label></td>
+                <td colspan="2"><input type="text" name="name" id="sname" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="name">Father's Name</label></td>
+                <td colspan="2"><input type="text" name="name" id="fname" placeholder="Enter your father's name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="name">Mother's Name</label></td>
+                <td colspan="2"><input type="text" name="name" id="mname" placeholder="Enter your mother's name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="dob">Date of Birth</label></td>
+                <td colspan="2"><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="gender">Gender</label></td>
+                <!--<td>Male<input type="radio" name="gender" value="male"></td>
+                <td>Female<input type="radio" name="gender" value="female"></td>-->
+                <td>
+                    <div id="gender">
+                        Male<input type="radio" name="gender" value="male">
+                        Female<input type="radio" name="gender" value="female">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="email">Email ID</label></td>
+                <td colspan="2"><input type="email" name="email" id="email" placeholder="Enter your email-id"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="mobno">Mobile No.</label></td>
+                <td colspan="2"><input type="number" name="mobno" id="mobno" placeholder="Enter your mobile no."></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="address">Address</label></td>
+                <td colspan="2"><textarea name="address" id="address" rows="3" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="state">State</label></td>
+                <td colspan="2"><input type="text" name="state" id="state" placeholder="Enter your state name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="city">City</label></td>
+                <td colspan="2"><input type="text" name="city" id="city" placeholder="Enter your city name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
